@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    bottom: -10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#generator{
+    height: 50px;
+    width: 150px;
+    background-color: yellow;
+    border: 2px white;
+    font-size: 2em;
+    border-end-end-radius: 25%;
+    border-top-left-radius: 25%;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.36);
+-webkit-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.36);
+-moz-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.36);
+
+}
+#generator:hover{
+    transform: scale(1.2);
+    transition: .4s;
+}
+#output{
+    height: 70px;
+    width: 300px;
+    border: 2px solid black;
+    background-color: yellow;
+    border-end-end-radius: 25%;
+    border-top-left-radius: 25%;
+    color:  black;
+    font-weight: 900;
+    font-size: 1.1em;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.36);
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.36);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.36);
+}
+#info{
+    font-size: 1.7em;
+    color: yellow;
+    background-color: transparent;
+    border: 2px;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    cursor: pointer;
+}
+#info-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.close-btn{
+    height: 40px;
+    width: 40px;
+    border: 2px black solid;
+    color: black;
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    background-color: transparent;
+    font-size: 2em;
+}
+.close-btn:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+
+}
+.info-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    color: black;
+  }
+  
+  .info-content {
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 320px;
+    position: relative;
+    border: 2px black solid;
+
+  }
+  
+.info-title{
+    text-align: center;
+}
